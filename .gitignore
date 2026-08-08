@@ -169,6 +169,7 @@ local_settings.py
 credentials.json
 service-account.json
 
+
 # ----------------------------
 
 # DOCKER
@@ -188,3 +189,6 @@ docker-compose.override.yml
 *.sql~
 *.sqlite~
 *.db~
+
+# Firebase / Google Service Accounts
+*service-account*.json
