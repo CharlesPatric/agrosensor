@@ -1,0 +1,190 @@
+# ============================================================
+
+# DJANGO / PYTHON - AGROSENSOR
+
+# ============================================================
+
+# ----------------------------
+
+# PYTHON
+
+# ----------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Python cache
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Coverage
+
+.coverage
+.coverage.*
+htmlcov/
+
+# ----------------------------
+
+# VIRTUAL ENVIRONMENTS
+
+# ----------------------------
+
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ----------------------------
+
+# DJANGO
+
+# ----------------------------
+
+# Local Django files
+
+*.log
+
+# SQLite database
+
+db.sqlite3
+db.sqlite3-journal
+
+# Django static/media generated files
+
+staticfiles/
+media/
+
+# ----------------------------
+
+# ENVIRONMENT VARIABLES
+
+# ----------------------------
+
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+
+# IDE / EDITORS
+
+# ----------------------------
+
+# Visual Studio Code
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PyCharm
+
+.idea/
+
+# Visual Studio
+
+.vs/
+
+# ----------------------------
+
+# OPERATING SYSTEM
+
+# ----------------------------
+
+# Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+
+.DS_Store
+
+# Linux
+
+*~
+
+# ----------------------------
+
+# TEMPORARY FILES
+
+# ----------------------------
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ----------------------------
+
+# PACKAGES / BUILD
+
+# ----------------------------
+
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+
+# ----------------------------
+
+# JUPYTER
+
+# ----------------------------
+
+.ipynb_checkpoints/
+
+# ----------------------------
+
+# DOCUMENTATION / GENERATED
+
+# ----------------------------
+
+*.pdf~
+
+# ----------------------------
+
+# LOCAL DEVELOPMENT
+
+# ----------------------------
+
+local_settings.py
+
+# ----------------------------
+
+# SECRETS / CREDENTIALS
+
+# ----------------------------
+
+*.pem
+*.key
+*.crt
+credentials.json
+service-account.json
+
+# ----------------------------
+
+# DOCKER
+
+# ----------------------------
+
+# Local Docker overrides
+
+docker-compose.override.yml
+
+# ----------------------------
+
+# BACKUPS
+
+# ----------------------------
+
+*.sql~
+*.sqlite~
+*.db~
