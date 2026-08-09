@@ -31,7 +31,12 @@ urlpatterns = [
         include("apps.dispositivos.urls")
     ),
      path(
-    "api/",
-    include("apps.sensores.urls")
+        "api/",
+        include("apps.sensores.urls")
+    ),
+     path(
+    "api/mediciones/",
+    include("apps.mediciones.urls")
 ),
+     
 ]
