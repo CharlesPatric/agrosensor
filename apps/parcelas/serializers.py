@@ -29,6 +29,7 @@ class ParcelaSerializer(serializers.ModelSerializer):
             "nombre",
             "empresa",
             "empresa_id",
+            "firebase_id",
         ]
 
         read_only_fields = [
