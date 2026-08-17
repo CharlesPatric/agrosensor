@@ -10,6 +10,7 @@ class PerfilUsuarioAdmin(admin.ModelAdmin):
         "id",
         "usuario",
         "empresa",
+        "rol",
         "cargo",
         "telefono",
         "activo",
@@ -26,6 +27,8 @@ class PerfilUsuarioAdmin(admin.ModelAdmin):
     list_filter = (
         "activo",
         "empresa",
+        "rol",
+        "cargo",
     )
 
     ordering = (

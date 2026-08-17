@@ -7,7 +7,7 @@ from apps.dispositivos.models import Dispositivo
 from services.firebase.mediciones import obtener_mediciones
 
 from .serializers import MedicionSerializer
-
+from .transformers import enriquecer_medicion
 
 class MedicionListAPIView(APIView):
 
@@ -37,10 +37,13 @@ class MedicionListAPIView(APIView):
                 mediciones,
                 many=True
             )
+            mediciones_enriquecidas = [
+            enriquecer_medicion(medicion)
+            for medicion in mediciones
+            ]
 
-            return Response(
-                serializer.data
-            )
+            return Response(mediciones_enriquecidas)    
+            
 
         except Dispositivo.DoesNotExist:
 

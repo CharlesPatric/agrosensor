@@ -8,6 +8,11 @@ from apps.empresas.models import Empresa
 
 class PerfilUsuario(models.Model):
 
+    class Rol(models.TextChoices):
+        ADMIN = "ADMIN", "Administrador"
+        INGENIERO = "INGENIERO", "Ingeniero Técnico"
+        AGRICULTOR = "AGRICULTOR", "Agricultor"
+        
     usuario = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
@@ -36,6 +41,12 @@ class PerfilUsuario(models.Model):
 
     fecha_creacion = models.DateTimeField(
         auto_now_add=True
+    )
+    
+    rol = models.CharField(
+    max_length=20,
+    choices=Rol.choices,
+    default=Rol.ADMIN
     )
 
     def __str__(self):
