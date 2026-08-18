@@ -21,10 +21,18 @@ class MedicionListAPIView(APIView):
 
             firebase_id = None
 
+            #if dispositivo_id:
+
+             #   dispositivo = Dispositivo.objects.get(
+              #      id=dispositivo_id
+                #)
+
+              #  firebase_id = dispositivo.firebase_id
             if dispositivo_id:
 
                 dispositivo = Dispositivo.objects.get(
-                    id=dispositivo_id
+                    id=dispositivo_id,
+                    parcela__empresa=request.user.perfil.empresa
                 )
 
                 firebase_id = dispositivo.firebase_id
